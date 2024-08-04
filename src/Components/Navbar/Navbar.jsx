@@ -20,6 +20,8 @@ const Navbar = () => {
 
   window.addEventListener("scroll", changeColor);
 
+  const [activeNav, setActiveNav] = useState("home");
+
   return (
     <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
@@ -27,17 +29,41 @@ const Navbar = () => {
       </Link>
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li>
-          <Link to="/">Home</Link>
+        <li onClick={() => setActiveNav("home")}>
+          <Link
+            to="/"
+            style={{ color: activeNav === "home" ? "blueviolet" : "white" }}
+          >
+            Home
+            {activeNav === "home" ? <hr /> : <></>}
+          </Link>
         </li>
-        <li>
-          <Link to="/pricing">Pricing</Link>
+        <li onClick={() => setActiveNav("pricing")}>
+          <Link
+            to="/pricing"
+            style={{ color: activeNav === "pricing" ? "blueviolet" : "white" }}
+          >
+            Pricing
+            {activeNav === "pricing" ? <hr /> : <></>}
+          </Link>
         </li>
-        <li>
-          <Link to="/training">Training</Link>
+        <li onClick={() => setActiveNav("training")}>
+          <Link
+            to="/training"
+            style={{ color: activeNav === "training" ? "blueviolet" : "white" }}
+          >
+            Training
+            {activeNav === "training" ? <hr /> : <></>}
+          </Link>
         </li>
-        <li>
-          <Link to="/contact">Contact</Link>
+        <li onClick={() => setActiveNav("contact")}>
+          <Link
+            to="/contact"
+            style={{ color: activeNav === "contact" ? "blueviolet" : "white" }}
+          >
+            Contact
+            {activeNav === "contact" ? <hr /> : <></>}
+          </Link>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>

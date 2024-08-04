@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../Components/Footer/Footer";
 import HeroImage from "../../Components/HeroImage/HeroImage";
 import PricingBox from "../../Components/PricingBox/PricingBox";
@@ -9,7 +8,6 @@ import { ReactTyped } from "react-typed";
 const Pricing = () => {
   return (
     <div>
-      <Navbar />
       <HeroImage heading="PRICING" text="Choose your trip.." />
       <div className="pricing-container">
         <div className="pricing-text">

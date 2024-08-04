@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import space_video from "../../Assets/space2.mp4";
+import space_video from "../../Assets/Hero-Video.mp4";
 
 const Hero = () => {
   return (
