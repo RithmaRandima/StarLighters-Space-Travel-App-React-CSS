@@ -1,18 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css";
-import space_video from "../../Assets/Hero-Video.mp4";
+import hero_video from "../../Assets/Hero-Video.mp4";
+import hero_image from "../../Assets/training-info.jpg";
 
 const Hero = () => {
   return (
     <div className="hero">
       <video autoPlay loop muted id="video">
-        <source src={space_video} type="video/mp4" />
+        <source src={hero_video} type="video/mp4" />
       </video>
+
+      <div className="hero-img-container">
+        <img src={hero_image} alt="" />
+      </div>
+
       <div className="content">
-        <h1>
-          Zero <span style={{ color: "blueviolet" }}>Gravity</span> Travel.
-        </h1>
+        <h1>Space exploration for a better tomorrow</h1>
         <p>World's first civilian space travel</p>
 
         <div>
