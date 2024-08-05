@@ -24,7 +24,16 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
-        <h1>StarLighters</h1>
+        <div className="relative  border-[blueviolet] bg-white pl-1  pb-1 pr-1">
+          <h1 className="text-[13px] font-bold">
+            <span className="font-extrabold text-[15px] text-[blueviolet]">
+              StarLighters
+            </span>{" "}
+          </h1>
+          <p className="absolute text-[8px] bottom-[-7px] right-[-30px] bg-[blueviolet] border-[blueviolet] border-[1px] text-white font-bold px-1 tracking-[1px]">
+            beyond the universe
+          </p>
+        </div>
       </Link>
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>

@@ -9,23 +9,35 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
+import FooterImgBox from "./FooterImgBox/FooterImgBox";
+
+import img1 from "../../Assets/Gallery-img-5.jpg";
 
 const Footer = () => {
   const { activeNav, setActiveNav } = useContext(AppContext);
 
   return (
-    <div className="footer">
+    <div className="footer relative mt-[80px]">
       {/* top section */}
-      <div className="w-[100%] h-[120px] bg-red-500"></div>
+      <div className="hidden md:grid w-[100%] mx-auto h-[120px] grid-cols-8 ">
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+        <FooterImgBox img={img1} />
+      </div>
       {/* bottom section */}
       <div className=" px-5 pt-10">
-        <h1 className="text-[18px] md:text-[28px] capitalize mb-5 font-[400]">
+        <h1 className="text-[18px] md:text-[28px] capitalize mb-5 font-[400] text-center md:text-left">
           Your journey starts here!{" "}
           <span className="text-white/50">Let’s talk!</span>
         </h1>
 
-        <div className="flex items-center justify-between mb-7">
-          <ul className="flex gap-7">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-7">
+          <ul className="flex gap-7 mb-6 md:mb-0">
             <li onClick={() => setActiveNav("home")}>
               <Link
                 to="/"
@@ -98,19 +110,22 @@ const Footer = () => {
         {/* copyright text */}
         <div className="flex flex-col md:flex-row md:justify-between justify-center items-center py-4 gap-7 pb-[17px]  bg-[#000000] text-white">
           <p className="text-[10px] md:text-[8px] tracking-[4px]">
-            © 2024 Classy<span className="text-red-500 font-bold">Fit</span> ALL
-            RIGHTS RESERVED.
+            © 2024
+            <span className=" mx-1 text-[blueviolet] font-bold">
+              StarLighters
+            </span>{" "}
+            ALL RIGHTS RESERVED.
           </p>
           {/* logo Section */}
-          <div className="relative  border-white border-2 pl-1  pb-1 pr-5">
-            <h1 className="text-[15px] font-bold">
-              Classy
-              <span className="font-extrabold text-[18px] text-[#f00]">
-                Fit
+
+          <div className="relative  border-[blueviolet] bg-white pl-1  pb-1 pr-1">
+            <h1 className="text-[13px] font-bold">
+              <span className="font-extrabold text-[15px] text-[blueviolet]">
+                StarLighters
               </span>{" "}
             </h1>
-            <p className="absolute text-[8px] bottom-[-5px] right-[-10px] bg-white text-black">
-              sport Experience
+            <p className="absolute text-[8px] bottom-[-7px] right-[-30px] bg-[blueviolet] border-[blueviolet] border-[1px] text-white font-bold px-1 tracking-[1px]">
+              beyond the universe
             </p>
           </div>
           <p className="text-[10px] font-bold tracking-[4px]">

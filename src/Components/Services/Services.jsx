@@ -1,6 +1,7 @@
 import React from "react";
 import "./Services.css";
 import ServiceBox from "./ServiceBox/ServiceBox";
+import { serviceData } from "../../Data/ServiceData";
 
 const Services = () => {
   return (
@@ -12,9 +13,16 @@ const Services = () => {
         </h1>
       </div>
       <div className="w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-3 gap-5">
-        <ServiceBox />
-        <ServiceBox />
-        <ServiceBox />
+        {serviceData.map((data) => {
+          return (
+            <ServiceBox
+              key={data.id}
+              img={data.img}
+              title={data.title}
+              num={data.num}
+            />
+          );
+        })}
       </div>
     </div>
   );

@@ -1,15 +1,25 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img from "../../Assets/news-3.jpg";
+import img from "../../Assets/about-image.jpg";
+import about_video from "../../Assets/about-space.mp4";
 
 const HeroAbout = () => {
   return (
     <div className="w-[100%] h-[90vh] grid grid-cols-1 md:grid-cols-2 mb-10 overflow-hidden">
       <div className="hidden md:flex w-[100%] h-[100%] justify-start px-16 relative">
-        <div className=" w-[80%] h-[100%] bg-white">
+        <div className=" w-[80%] h-[90vh] bg-white">
           <img src={img} className="w-[100%] h-[100%] object-cover" alt="" />
         </div>
-        <div className="absolute w-[70%] h-[50%] bg-gray-600 bottom-[30px] right-[-50px]"></div>
+        <div className="absolute w-[400px] h-[250px] bottom-[30px] right-[-50px]">
+          <video
+            autoPlay
+            loop
+            muted
+            className="w-[100%] h-[250px] object-cover"
+          >
+            <source src={about_video} type="video/mp4" />
+          </video>
+        </div>
       </div>
 
       <div className="relative w-[100%] h-[100%] bg-black md:ml-[50px]">
