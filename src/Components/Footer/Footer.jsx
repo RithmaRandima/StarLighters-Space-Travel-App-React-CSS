@@ -11,7 +11,14 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
 import FooterImgBox from "./FooterImgBox/FooterImgBox";
 
-import img1 from "../../Assets/Gallery-img-5.jpg";
+import img1 from "../../Assets/gallery-img-1.jpg";
+import img2 from "../../Assets/gallery-img-2.jpg";
+import img3 from "../../Assets/gallery-img-3.webp";
+import img4 from "../../Assets/Gallery-img-4.jpg";
+import img5 from "../../Assets/Gallery-img-5.jpg";
+import img6 from "../../Assets/service-1.jpg";
+import img7 from "../../Assets/news-4.avif";
+import img8 from "../../Assets/news-6.jpg";
 
 const Footer = () => {
   const { activeNav, setActiveNav } = useContext(AppContext);
@@ -21,13 +28,13 @@ const Footer = () => {
       {/* top section */}
       <div className="hidden md:grid w-[100%] mx-auto h-[120px] grid-cols-8 ">
         <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
-        <FooterImgBox img={img1} />
+        <FooterImgBox img={img2} />
+        <FooterImgBox img={img3} />
+        <FooterImgBox img={img4} />
+        <FooterImgBox img={img5} />
+        <FooterImgBox img={img6} />
+        <FooterImgBox img={img7} />
+        <FooterImgBox img={img8} />
       </div>
       {/* bottom section */}
       <div className=" px-5 pt-10">

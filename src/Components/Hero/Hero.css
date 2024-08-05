@@ -15,89 +15,110 @@
 }
 
 .hero-img-container {
-  width: 600px;
+  width: 120px;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50px;
-  transform: translateY(-50%);
+  transform: translateY(-60%);
   height: 450px;
   overflow: hidden;
 }
-.hero-img-container:hover img {
-  transform: scale(1.1);
-}
-.hero-img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
 
 .hero-img-container-2 {
-  width: 230px;
-  height: 270px;
+  width: 120px;
+  height: 450px;
   position: absolute;
   top: 50%;
-  left: 450px;
+  top: 60%;
+  left: 190px;
+  transform: translateY(-60%);
   overflow: hidden;
 }
-.hero-img-container-2:hover img {
-  transform: scale(1.1);
+
+.hero-img-container-3 {
+  width: 120px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  top: 60%;
+  left: 330px;
+  transform: translateY(-60%);
+  overflow: hidden;
 }
-.hero-img-container-2 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
+
+.hero-img-container-4 {
+  width: 120px;
+  height: 450px;
+  position: absolute;
+  top: 50%;
+  top: 60%;
+  left: 470px;
+  transform: translateY(-60%);
+  overflow: hidden;
 }
 
 .hero .content {
-  width: 800px;
+  width: 820px;
   text-align: right;
   position: absolute;
   margin: auto;
-  height: fit-content;
   top: 50%;
-  left: 400px;
+  left: 330px;
   transform: translateY(-50%);
   padding-right: 50px;
+  line-height: 40px;
 }
 
 .hero .content h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   color: #fff;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   color: #fff;
-  text-transform: uppercase;
-  font-weight: 200;
-  margin-bottom: 3.3rem;
+  font-weight: 100;
+
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  line-height: 25px;
+  text-align: right;
+  margin-left: 250px;
 }
-.hero .btn {
-  margin: 1rem 0.5rem;
+
+/* button section */
+.hero-button:hover .hero-button-icon {
+  transform: scale(1.6);
+  color: blueviolet;
 }
 
 @media screen and (max-width: 640px) {
   .hero-img-container,
-  .hero-img-container-2 {
+  .hero-img-container-2,
+  .hero-img-container-3,
+  .hero-img-container-4 {
     display: none;
   }
   .hero .content {
     text-align: center;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 90%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -30%);
     padding-right: 0px;
+    line-height: 60px;
   }
   .content h1 {
-    font-size: 2.8rem !important;
+    font-size: 2.4rem !important;
   }
   .content p {
     font-size: 1rem !important;
     margin-bottom: 3rem;
+    margin: 1rem 0;
+    line-height: 25px;
+    text-align: right;
+    margin-left: 0px;
+    text-align: center;
   }
 }
