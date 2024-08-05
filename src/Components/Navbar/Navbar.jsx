@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { AppContext } from "../../App";
 
 const Navbar = () => {
-  const [click, setClick] = useState(false);
+  const { click, setClick, color, setColor, activeNav, setActiveNav } =
+    useContext(AppContext);
   const handleClick = () => {
     setClick(!click);
   };
 
-  const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 100) {
       setColor(true);
@@ -19,8 +20,6 @@ const Navbar = () => {
   };
 
   window.addEventListener("scroll", changeColor);
-
-  const [activeNav, setActiveNav] = useState("home");
 
   return (
     <div className={color ? "header header-bg" : "header"}>
