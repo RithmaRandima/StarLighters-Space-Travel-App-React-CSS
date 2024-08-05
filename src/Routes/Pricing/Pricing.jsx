@@ -4,6 +4,7 @@ import HeroImage from "../../Components/HeroImage/HeroImage";
 import PricingBox from "../../Components/PricingBox/PricingBox";
 import "./Pricing.css";
 import { ReactTyped } from "react-typed";
+import About from "../../Components/About/About";
 
 const Pricing = () => {
   return (
@@ -30,6 +31,7 @@ const Pricing = () => {
           <PricingBox heading="Executive" btc="7" />
         </div>
       </div>
+      <About />
       <Footer />
     </div>
   );

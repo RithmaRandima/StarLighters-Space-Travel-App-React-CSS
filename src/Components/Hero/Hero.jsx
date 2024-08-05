@@ -15,6 +15,10 @@ const Hero = () => {
         <img src={hero_image} alt="" />
       </div>
 
+      <div className="hero-img-container-2">
+        <img src={hero_image} alt="" />
+      </div>
+
       <div className="content">
         <h1>Space exploration for a better tomorrow</h1>
         <p>World's first civilian space travel</p>

@@ -1,0 +1,3 @@
+.gallery-right-box::-webkit-scrollbar {
+  display: none;
+}
