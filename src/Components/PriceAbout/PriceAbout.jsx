@@ -1,25 +1,35 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img from "../../Assets/about-image.jpg";
+import img1 from "../../Assets/Pricing-About-Pwo.jpg";
+import img2 from "../../Assets/news-3.jpg";
+import img3 from "../../Assets/Training-About.jpg";
 import about_video from "../../Assets/about-space.mp4";
 
 const PriceAbout = () => {
   return (
     <div className="w-[100%] h-[100%] grid grid-cols-1 md:grid-cols-2 mb-10 overflow-x-hidden ">
       <div className="hidden md:flex w-[100%] h-[100%] justify-start pl-8 relative">
-        <div className=" w-[40%] h-[100vh] ">
-          <img src={img} className="w-[100%] h-[100%] object-cover" alt="" />
+        <div className=" w-[39%] h-[100vh] ">
+          <img
+            src={img1}
+            className="w-[100%] h-[100%] object-cover object-left"
+            alt=""
+          />
         </div>
         <div className="absolute w-[180px] h-[90vh] top-[50%] translate-y-[-50%] right-[160px]">
-          <img src={img} className="w-[100%] h-[100%] object-cover" alt="" />
+          <img src={img2} className="w-[100%] h-[100%] object-cover " alt="" />
         </div>
 
         <div className="absolute w-[150px] h-[80vh] top-[50%] translate-y-[-50%] right-[-10px]">
-          <img src={img} className="w-[100%] h-[100%] object-cover" alt="" />
+          <img
+            src={img3}
+            className="w-[100%] h-[100%] object-cover object-right"
+            alt=""
+          />
         </div>
       </div>
 
-      <div className="relative w-[100%] h-[100%] bg-black md:ml-[50px]">
+      <div className="relative w-[100%] h-[100%] md:ml-[50px]">
         <div className="absolute top-[150px] left-[30px]">
           <p className="uppercase text-[12px] mb-2 font-bold tracking-[2px]">
             KEY ACHIEVEMENTS

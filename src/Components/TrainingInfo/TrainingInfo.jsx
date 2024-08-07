@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img from "../../Assets/about-image.jpg";
-import about_video from "../../Assets/about-space.mp4";
+import img from "../../Assets/news-6.jpg";
+import about_video from "../../Assets/Training-Video.mp4";
 import TrainingInfoBox from "./TrainingInfoBox/TrainingInfoBox";
 
 const TrainingInfo = () => {
@@ -10,8 +10,12 @@ const TrainingInfo = () => {
       {/* Training Info Top */}
       <div className="w-[100%] h-[90vh] grid grid-cols-1 md:grid-cols-2 mb-10 overflow-hidden">
         <div className="hidden md:flex w-[100%] h-[100%] justify-start px-16 relative">
-          <div className=" w-[80%] h-[90vh] bg-white">
-            <img src={img} className="w-[100%] h-[100%] object-cover" alt="" />
+          <div className=" w-[80%] h-[90vh]">
+            <img
+              src={img}
+              className="w-[100%] h-[100%] object-cover object-right"
+              alt=""
+            />
           </div>
           <div className="absolute w-[400px] h-[250px] bottom-[30px] right-[-50px]">
             <video
@@ -25,7 +29,7 @@ const TrainingInfo = () => {
           </div>
         </div>
 
-        <div className="relative w-[100%] h-[100%] bg-black md:ml-[50px]">
+        <div className="relative w-[100%] h-[100%] md:ml-[50px]">
           <div className="absolute top-[150px] left-[30px]">
             <p className="uppercase text-[12px] mb-2 font-bold tracking-[2px]">
               KEY ACHIEVEMENTS
@@ -53,7 +57,7 @@ const TrainingInfo = () => {
         </div>
       </div>
       {/* Training Info Bottom */}
-      <div className="bg-black w-[100%] h-[25vh] grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10">
+      <div className=" w-[100%] h-[25vh] grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-10">
         <TrainingInfoBox title="Events" count={"210+"} />
         <TrainingInfoBox title="Monthly Travelers" count={"4600+"} />
         <TrainingInfoBox title="Journeys" count={"120+"} />

@@ -12,16 +12,18 @@ import ContactSection from "../../Components/ContactSection/ContactSection";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home-page-container">
       <Hero />
-      <Services />
-      <WhoAreWe />
-      <HeroAbout />
-      <Newsletter />
-      <Gallery />
-      <News />
-      <Footer />
-      <ContactSection />
+      <div className="home-back-image">
+        <Services />
+        <WhoAreWe />
+        <HeroAbout />
+        <Newsletter />
+        <Gallery />
+        <News />
+        <Footer />
+        <ContactSection />
+      </div>
     </div>
   );
 };

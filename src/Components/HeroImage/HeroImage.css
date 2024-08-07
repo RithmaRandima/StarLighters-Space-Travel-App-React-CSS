@@ -28,7 +28,8 @@
 
 .hero-img h1 {
   font-size: 4rem !important;
-  letter-spacing: 5px;
+  font-weight: 900;
+  letter-spacing: 10px;
 }
 
 .hero-img p {

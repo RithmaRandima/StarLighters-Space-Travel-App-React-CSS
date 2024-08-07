@@ -42,11 +42,13 @@ const TrainingSection = () => {
   };
 
   return (
-    <div className="service-container w-[100%] h-[98vh] px-7 md:mt-10">
-      <div className="mb-10">
-        <p className="uppercase text-[12px] md;text-[15px]">Our Service</p>
+    <div className="service-container w-[100%] h-[100vh] px-7 md:mt-10 md:mb-16">
+      <div className="mb-10 text-center">
+        <p className="uppercase text-[14px] md;text-[15px] tracking-[2px]">
+          Our Packages
+        </p>
         <h1 className="text-[25px] md:text-[45px] font-[500]">
-          Explore the observatory
+          Explore the Universe With Us
         </h1>
       </div>
       <div className="w-[100%] h-[100%] ">
@@ -59,6 +61,7 @@ const TrainingSection = () => {
                 title={data.title}
                 num={data.num}
                 desc={data.desc}
+                price={data.price}
               />
             );
           })}

@@ -1,12 +1,12 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img from "../../Assets/about-image.jpg";
-import about_video from "../../Assets/about-space.mp4";
+import img from "../../Assets/Pricing-About-Pwo.jpg";
+import about_video from "../../Assets/hero-small-1.mp4";
 
 const PriceAboutTwo = () => {
   return (
-    <div className="w-[100%] h-[90vh] grid grid-cols-1 md:grid-cols-2 mb-10 overflow-hidden">
-      <div className="relative w-[100%] h-[100%] bg-black md:ml-[50px]">
+    <div className="w-[100%] h-[90vh] grid grid-cols-1  md:grid-cols-2  overflow-hidden bg-transparent">
+      <div className="relative w-[100%] h-[100%] md:ml-[50px]">
         <div className="absolute top-[150px] left-[30px]">
           <p className="uppercase text-[12px] mb-2 font-bold tracking-[2px]">
             KEY ACHIEVEMENTS

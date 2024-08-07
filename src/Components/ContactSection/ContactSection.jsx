@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import img1 from "../../Assets/gallery-img-1.jpg";
-import img2 from "../../Assets/gallery-img-1.jpg";
-import img3 from "../../Assets/gallery-img-1.jpg";
-import img4 from "../../Assets/gallery-img-1.jpg";
-import img5 from "../../Assets/gallery-img-1.jpg";
-import img6 from "../../Assets/gallery-img-1.jpg";
+import img1 from "../../Assets/about-image.jpg";
+import img2 from "../../Assets/gallery-img-2.jpg";
+import img3 from "../../Assets/gallery-img-3.webp";
+import img4 from "../../Assets/Gallery-img-4.jpg";
+import img5 from "../../Assets/Gallery-img-5.jpg";
+import img6 from "../../Assets/Gallery-img-6.avif";
 import { FaInstagram, FaTwitter } from "react-icons/fa6";
 import { FaFacebookF, FaLinkedinIn, FaTimes } from "react-icons/fa";
 import { AppContext } from "../../App";

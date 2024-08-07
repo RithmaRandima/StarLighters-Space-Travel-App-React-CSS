@@ -25,6 +25,9 @@ const TrainingBox = (props) => {
       </div>
       <p className="training-box-description h-0 overflow-hidden mb-[20px]">
         {props.desc}
+        <span className="block text-[blueviolet] text-[18px] my-5 md:my-[2px] font-bold">
+          $ {props.price}
+        </span>
       </p>
       <div className="service-box-progress-bar relative w-[100%] h-[2px] bg-white"></div>
     </div>

@@ -22,7 +22,7 @@ const HeroAbout = () => {
         </div>
       </div>
 
-      <div className="relative w-[100%] h-[100%] bg-black md:ml-[50px]">
+      <div className="relative w-[100%] h-[100%]  md:ml-[50px]">
         <div className="absolute top-[150px] left-[30px]">
           <p className="uppercase text-[12px] mb-2 font-bold tracking-[2px]">
             KEY ACHIEVEMENTS

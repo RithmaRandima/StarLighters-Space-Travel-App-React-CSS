@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoAreWe = () => {
   return (
-    <div className="bg-black w-[100%] h-[50vh] text-center py-8 mb-10 md:mb-5">
+    <div className=" w-[100%] h-[50vh] text-center py-8 mb-10 md:mb-5">
       <p className="uppercase font-[600] text-[14px] mb-3">Who are We</p>
       <h1 className="text-[25px] md:text-[30px] w-[90%] md:w-[80%] mx-auto font-[600]">
         We are beckoned by the cosmic mysteries that have ignited human

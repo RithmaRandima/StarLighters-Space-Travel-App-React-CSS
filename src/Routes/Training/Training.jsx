@@ -10,14 +10,16 @@ import ContactSection from "../../Components/ContactSection/ContactSection";
 
 const Training = () => {
   return (
-    <div className="training">
+    <div>
       <HeroImage heading="TRAINING." text="Pre-Flight & In-Flight Training." />
-      <TrainingAbout />
-      <TrainingSection />
-      <TrainingInfo />
-      <TestimonialAndStaff />
-      <Footer />
-      <ContactSection />
+      <div className="training">
+        <TrainingAbout />
+        <TrainingSection />
+        <TrainingInfo />
+        <TestimonialAndStaff />
+        <Footer />
+        <ContactSection />
+      </div>
     </div>
   );
 };

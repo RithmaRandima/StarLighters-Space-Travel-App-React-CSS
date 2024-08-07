@@ -74,11 +74,11 @@ const Pricing = () => {
             <PricingBox heading="Executive" btc="20" />
           </Slider>
         </div>
+        <PriceAboutTwo />
+        <Newsletter />
+        <Footer />
+        <ContactSection />
       </div>
-      <PriceAboutTwo />
-      <Newsletter />
-      <Footer />
-      <ContactSection />
     </div>
   );
 };
