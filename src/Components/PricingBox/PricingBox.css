@@ -1,25 +1,31 @@
 .card {
-  border: 1px solid #eee;
   color: #eee;
   text-align: center;
-  padding: 1rem;
+  margin: 20px 14px;
+  background-color: rgba(137, 43, 226, 0.2);
+  transition: 0.5s;
+  padding-bottom: 0.2rem;
 }
+
 .card:hover {
-  background-color: #0e0e0e;
+  background-color: rgba(137, 43, 226, 0.4);
+  transform: scale(1.05);
 }
 
 .card h3 {
   font-size: 1.4rem;
-  padding: 1rem;
+  padding: 0.4rem;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 .card .bar {
   border-bottom: 1px solid #eee;
   width: 10%;
-  margin: 0.5rem auto;
+  margin: 0.1rem auto;
   display: block;
 }
 .card .btc {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 600;
   padding: 1rem;
   color: blueviolet;
@@ -27,7 +33,7 @@
 
 .card p {
   color: #eee;
-  padding: 0.8rem 0;
+  padding: 0.1rem;
   font-size: 1rem;
 }
 

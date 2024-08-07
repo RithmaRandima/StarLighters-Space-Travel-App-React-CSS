@@ -1,0 +1,42 @@
+.service-container {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* service-box */
+.training-box:hover .service-box-text-content {
+  margin-left: 0;
+}
+
+.training-box:hover .service-box-button {
+  border-color: white;
+  opacity: 1;
+}
+
+.training-box:hover .service-box-progress-bar::after {
+  content: "";
+  color: blue;
+  width: 0%;
+  background: blueviolet;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  top: 0;
+  animation: progress-bar 700ms linear forwards;
+}
+.training-box-description {
+  transition: 1s;
+}
+
+.training-box:hover .training-box-description {
+  height: 95px;
+  opacity: 1;
+}
+
+@keyframes progress-bar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

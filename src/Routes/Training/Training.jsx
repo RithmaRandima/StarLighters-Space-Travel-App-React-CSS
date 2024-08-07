@@ -2,15 +2,17 @@ import React from "react";
 import "./Training.css";
 import Footer from "../../Components/Footer/Footer";
 import HeroImage from "../../Components/HeroImage/HeroImage";
-import TrainingInfo from "../../Components/TrainingInfo/TrainingInfo";
 import { ReactTyped } from "react-typed";
+import About from "../../Components/About/About";
+import TestimonialAndStaff from "../../Components/TestimonialsAndStaff/TestimonialsAndStaff";
+import TrainingSection from "../../Components/TrainingSection/TrainingSection";
 
 const Training = () => {
   return (
     <div className="training">
       <HeroImage heading="TRAINING." text="Pre-Flight & In-Flight Training." />
       <div>
-        <div className="training-text">
+        {/* <div className="training-text">
           <ReactTyped
             strings={["Check Our Plans "]}
             className="about-container-title"
@@ -23,9 +25,11 @@ const Training = () => {
             fugiat laboriosam iusto minima accusamus qui. Numquam reiciendis
             impedit iste harum.
           </p>
-        </div>
+        </div> */}
       </div>
-      <TrainingInfo />
+      <About />
+      <TrainingSection />
+      <TestimonialAndStaff />
       <Footer />
     </div>
   );

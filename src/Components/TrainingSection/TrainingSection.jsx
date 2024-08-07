@@ -1,13 +1,13 @@
 import React from "react";
-import "./News.css";
+import "./TrainingSection.css";
+import TrainingBox from "./TrainingBox/TrainingBox";
+import { trainingData } from "../../Data/TrainingData";
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import NewsBox from "./NewsBox/NewsBox";
-import { newsData } from "../../Data/NewsData";
 
-const News = () => {
+const TrainingSection = () => {
   var settings = {
     arrows: false,
     dots: false,
@@ -42,23 +42,23 @@ const News = () => {
   };
 
   return (
-    <div className="news-container -[100%] h-[100%] px-7 md:my-10 mt-10 md:mt-20 md:mb-28">
-      <div className="text-center mb-10">
-        <p className="uppercase text-[12px] md:text-[15px]">BLOG & NEWS</p>
+    <div className="service-container w-[100%] h-[98vh] px-7 md:mt-20">
+      <div className="mb-10">
+        <p className="uppercase text-[12px] md;text-[15px]">Our Service</p>
         <h1 className="text-[25px] md:text-[45px] font-[500]">
           Explore the observatory
         </h1>
       </div>
-      <div className="news-box-container w-[100%] h-[100%]">
+      <div className="w-[100%] h-[100%] ">
         <Slider {...settings}>
-          {newsData.map((news) => {
+          {trainingData.map((data) => {
             return (
-              <NewsBox
-                key={news.id}
-                img={news.img}
-                height={news.height}
-                title={news.title}
-                date={news.date}
+              <TrainingBox
+                key={data.id}
+                img={data.img}
+                title={data.title}
+                num={data.num}
+                desc={data.desc}
               />
             );
           })}
@@ -68,4 +68,4 @@ const News = () => {
   );
 };
 
-export default News;
+export default TrainingSection;

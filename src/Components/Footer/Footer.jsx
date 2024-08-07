@@ -24,7 +24,7 @@ const Footer = () => {
   const { activeNav, setActiveNav } = useContext(AppContext);
 
   return (
-    <div className="footer relative mt-[80px]">
+    <div className="footer relative">
       {/* top section */}
       <div className="hidden md:grid w-[100%] mx-auto h-[120px] grid-cols-8 ">
         <FooterImgBox img={img1} />
