@@ -11,6 +11,7 @@ import Newsletter from "../../Components/Newsletter/Newsletter";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ContactSection from "../../Components/ContactSection/ContactSection";
 
 const Pricing = () => {
   var settings = {
@@ -77,6 +78,7 @@ const Pricing = () => {
       <PriceAboutTwo />
       <Newsletter />
       <Footer />
+      <ContactSection />
     </div>
   );
 };

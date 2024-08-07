@@ -42,7 +42,7 @@ const TrainingSection = () => {
   };
 
   return (
-    <div className="service-container w-[100%] h-[98vh] px-7 md:mt-20">
+    <div className="service-container w-[100%] h-[98vh] px-7 md:mt-10">
       <div className="mb-10">
         <p className="uppercase text-[12px] md;text-[15px]">Our Service</p>
         <h1 className="text-[25px] md:text-[45px] font-[500]">

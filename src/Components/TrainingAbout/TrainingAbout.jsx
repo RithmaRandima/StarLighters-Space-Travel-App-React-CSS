@@ -1,9 +1,9 @@
 import React from "react";
-import "./About.css";
+import "./TrainingAbout.css";
 import top_image from "../../Assets/training-info.png";
 import { ReactTyped } from "react-typed";
 
-const About = () => {
+const TrainingAbout = () => {
   return (
     <div className="about-one">
       <div className="about-container">
@@ -23,7 +23,7 @@ const About = () => {
       </div>
 
       <div className="out-box">
-        <h5>Our Stories</h5>
+        <h5>Our Story</h5>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis
           nihil ullam, facere neque corrupti omnis praesentium eveniet
@@ -35,4 +35,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default TrainingAbout;

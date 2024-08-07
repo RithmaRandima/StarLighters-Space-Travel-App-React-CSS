@@ -1,12 +1,19 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { AppContext } from "../../App";
 
 const Navbar = () => {
-  const { click, setClick, color, setColor, activeNav, setActiveNav } =
-    useContext(AppContext);
+  const {
+    click,
+    setClick,
+    color,
+    setColor,
+    activeNav,
+    setActiveNav,
+    setContactOpen,
+  } = useContext(AppContext);
   const handleClick = () => {
     setClick(!click);
   };
@@ -37,7 +44,12 @@ const Navbar = () => {
       </Link>
 
       <ul className={click ? "nav-menu active" : "nav-menu"}>
-        <li onClick={() => setActiveNav("home")}>
+        <li
+          onClick={() => {
+            setActiveNav("home");
+            setContactOpen(false);
+          }}
+        >
           <Link
             to="/"
             style={{ color: activeNav === "home" ? "blueviolet" : "white" }}
@@ -46,7 +58,12 @@ const Navbar = () => {
             {activeNav === "home" ? <hr /> : <></>}
           </Link>
         </li>
-        <li onClick={() => setActiveNav("pricing")}>
+        <li
+          onClick={() => {
+            setActiveNav("pricing");
+            setContactOpen(false);
+          }}
+        >
           <Link
             to="/pricing"
             style={{ color: activeNav === "pricing" ? "blueviolet" : "white" }}
@@ -55,7 +72,12 @@ const Navbar = () => {
             {activeNav === "pricing" ? <hr /> : <></>}
           </Link>
         </li>
-        <li onClick={() => setActiveNav("training")}>
+        <li
+          onClick={() => {
+            setActiveNav("training");
+            setContactOpen(false);
+          }}
+        >
           <Link
             to="/training"
             style={{ color: activeNav === "training" ? "blueviolet" : "white" }}
@@ -66,7 +88,7 @@ const Navbar = () => {
         </li>
         <li onClick={() => setActiveNav("contact")}>
           <Link
-            to="/contact"
+            onClick={() => setContactOpen(true)}
             style={{ color: activeNav === "contact" ? "blueviolet" : "white" }}
           >
             Contact
@@ -74,6 +96,8 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
+
+      {/* hamburger Item */}
       <div className="hamburger" onClick={handleClick}>
         {click ? (
           <FaTimes size={20} style={{ color: "#fff" }} />
