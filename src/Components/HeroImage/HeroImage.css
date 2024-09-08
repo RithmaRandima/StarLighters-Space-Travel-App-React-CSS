@@ -7,7 +7,7 @@
 }
 .hero-img::before {
   content: "";
-  background: url("../../Assets/heroImage.jpg") fixed no-repeat bottom
+  background: url("../../Assets/heroImage.jpeg") fixed no-repeat bottom
     center/cover;
   height: 100%;
   width: 100%;

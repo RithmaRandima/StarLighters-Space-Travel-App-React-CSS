@@ -1,8 +1,8 @@
-import img1 from "../Assets/training-data-1.webp";
-import img2 from "../Assets/training-data-2.webp";
-import img3 from "../Assets/training-data-3.webp";
-import img4 from "../Assets/training-data-4.webp";
-import img5 from "../Assets/training-data-5.webp";
+import img1 from "../Assets/training-data-1.jpeg";
+import img2 from "../Assets/training-data-2.jpeg";
+import img3 from "../Assets/training-data-3.jpeg";
+import img4 from "../Assets/training-data-4.jpeg";
+import img5 from "../Assets/training-data-5.jpeg";
 
 export const trainingData = [
   {

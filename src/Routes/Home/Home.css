@@ -10,7 +10,7 @@
       rgba(0, 0, 0, 0.616),
       rgba(0, 0, 0, 0.773)
     ),
-    url("../../Assets/BG-Image.jpg");
+    url("../../Assets/BG-Image.jpeg");
   background-size: cover;
   background-attachment: fixed;
 }

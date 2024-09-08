@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img from "../../Assets/about-image.jpg";
+import img from "../../Assets/about-image.jpeg";
 import about_video from "../../Assets/about-space.mp4";
 
 const HeroAbout = () => {

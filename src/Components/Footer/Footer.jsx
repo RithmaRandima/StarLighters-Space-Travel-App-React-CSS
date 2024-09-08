@@ -11,14 +11,14 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../../App";
 import FooterImgBox from "./FooterImgBox/FooterImgBox";
 
-import img1 from "../../Assets/gallery-img-1.jpg";
-import img2 from "../../Assets/gallery-img-2.jpg";
-import img3 from "../../Assets/gallery-img-3.webp";
-import img4 from "../../Assets/Gallery-img-4.jpg";
+import img1 from "../../Assets/gallery-img-1.jpeg";
+import img2 from "../../Assets/gallery-img-2.jpeg";
+import img3 from "../../Assets/gallery-img-3.jpeg";
+import img4 from "../../Assets/Gallery-img-4.jpeg";
 import img5 from "../../Assets/Gallery-img-5.jpg";
-import img6 from "../../Assets/service-1.jpg";
+import img6 from "../../Assets/service-1.jpeg";
 import img7 from "../../Assets/news-4.avif";
-import img8 from "../../Assets/news-6.jpg";
+import img8 from "../../Assets/news-6.jpeg";
 
 const Footer = () => {
   const { activeNav, setActiveNav } = useContext(AppContext);

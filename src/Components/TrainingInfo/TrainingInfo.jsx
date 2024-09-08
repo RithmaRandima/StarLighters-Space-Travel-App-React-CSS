@@ -1,6 +1,6 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img from "../../Assets/news-6.jpg";
+import img from "../../Assets/news-6.jpeg";
 import about_video from "../../Assets/Training-Video.mp4";
 import TrainingInfoBox from "./TrainingInfoBox/TrainingInfoBox";
 

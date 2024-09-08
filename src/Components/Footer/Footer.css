@@ -2,7 +2,7 @@
   box-sizing: border-box !important;
   width: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.592), black),
-    url("../../Assets/Gallery-img-4.jpg");
+    url("../../Assets/Gallery-img-4.jpeg");
   background-position: center;
   background-size: cover;
 }

@@ -1,9 +1,8 @@
 import React from "react";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import img1 from "../../Assets/Pricing-About-Pwo.jpg";
-import img2 from "../../Assets/news-3.jpg";
-import img3 from "../../Assets/Training-About.jpg";
-import about_video from "../../Assets/about-space.mp4";
+import img1 from "../../Assets/Pricing-About-Pwo.jpeg";
+import img2 from "../../Assets/news-3.jpeg";
+import img3 from "../../Assets/Training-About.jpeg";
 
 const PriceAbout = () => {
   return (
