@@ -1,9 +1,9 @@
-import img1 from "../Assets/news-1.webp";
-import img2 from "../Assets/news-2.webp";
-import img3 from "../Assets/news-3.jpg";
+import img1 from "../Assets/news-1.jpeg";
+import img2 from "../Assets/news-2.jpeg";
+import img3 from "../Assets/news-3.jpeg";
 import img4 from "../Assets/news-4.avif";
-import img5 from "../Assets/news-5.jpg";
-import img6 from "../Assets/news-6.jpg";
+import img5 from "../Assets/news-5.jpeg";
+import img6 from "../Assets/news-6.jpeg";
 
 export const newsData = [
   {
