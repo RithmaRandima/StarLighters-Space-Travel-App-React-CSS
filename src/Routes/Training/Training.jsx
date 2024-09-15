@@ -10,7 +10,7 @@ import ContactSection from "../../Components/ContactSection/ContactSection";
 
 const Training = () => {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroImage heading="TRAINING." text="Pre-Flight & In-Flight Training." />
       <div className="training">
         <TrainingAbout />

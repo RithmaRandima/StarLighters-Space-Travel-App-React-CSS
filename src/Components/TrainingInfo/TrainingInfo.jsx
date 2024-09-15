@@ -8,7 +8,7 @@ const TrainingInfo = () => {
   return (
     <div>
       {/* Training Info Top */}
-      <div className="w-[100%] h-[90vh] grid grid-cols-1 md:grid-cols-2 mb-10 overflow-hidden">
+      <div className="w-[100%] h-[65vh] md:h-[90vh] grid grid-cols-1 md:grid-cols-2 mb-10 overflow-hidden">
         <div className="hidden md:flex w-[100%] h-[100%] justify-start px-16 relative">
           <div className=" w-[80%] h-[90vh]">
             <img

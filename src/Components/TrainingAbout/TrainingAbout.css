@@ -75,7 +75,7 @@
 
 @media screen and (max-width: 768px) {
   .about-one {
-    height: 100vh;
+    height: 50vh;
   }
   .about-one .about-container {
     height: 50%;
@@ -88,6 +88,7 @@
   }
   .about-container-title {
     font-size: 2.5rem !important;
+    margin-top: 200px;
   }
   .out-box {
     display: none;

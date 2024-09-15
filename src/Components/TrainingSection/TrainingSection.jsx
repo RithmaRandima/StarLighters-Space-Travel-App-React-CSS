@@ -42,7 +42,7 @@ const TrainingSection = () => {
   };
 
   return (
-    <div className="service-container w-[100%] h-[100vh] px-7 md:mt-10 md:mb-16">
+    <div className="service-container w-[100%] md:h-[100vh] h-[100%] py-10 px-7 md:mt-10 md:mb-16">
       <div className="mb-10 text-center">
         <p className="uppercase text-[14px] md;text-[15px] tracking-[2px]">
           Our Packages

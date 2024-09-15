@@ -37,12 +37,12 @@
   color: blueviolet;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 420px) {
   .hero-img h1 {
-    font-size: 2rem;
+    font-size: 3rem !important;
   }
 
   .hero-img p {
-    font-size: 1rem;
+    font-size: 1.6rem !important;
   }
 }

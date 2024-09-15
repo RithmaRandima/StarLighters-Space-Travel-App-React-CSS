@@ -48,6 +48,8 @@ const Navbar = () => {
           onClick={() => {
             setActiveNav("home");
             setContactOpen(false);
+            setClick(!click);
+            window.scrollTo(0, 0);
           }}
         >
           <Link
@@ -62,6 +64,8 @@ const Navbar = () => {
           onClick={() => {
             setActiveNav("pricing");
             setContactOpen(false);
+            setClick(!click);
+            window.scrollTo(0, 0);
           }}
         >
           <Link
@@ -76,6 +80,8 @@ const Navbar = () => {
           onClick={() => {
             setActiveNav("training");
             setContactOpen(false);
+            setClick(!click);
+            window.scrollTo(0, 0);
           }}
         >
           <Link
@@ -86,7 +92,13 @@ const Navbar = () => {
             {activeNav === "training" ? <hr /> : <></>}
           </Link>
         </li>
-        <li onClick={() => setActiveNav("contact")}>
+        <li
+          onClick={() => {
+            setActiveNav("contact");
+            window.scrollTo(0, 0);
+            setClick(!click);
+          }}
+        >
           <Link
             onClick={() => setContactOpen(true)}
             style={{ color: activeNav === "contact" ? "blueviolet" : "white" }}
